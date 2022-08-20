@@ -1,20 +1,119 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <br>
+    
+    <ion-buttons slot="start">
+        <ion-menu-button menu="menuPrincipal" style="font-size:2.9rem;"></ion-menu-button>
+    </ion-buttons>
+    
+    <ion-title class="ion-text-center tituloLetra" style="font-size:2.7rem;">
+      Rick y Morthy
+    </ion-title>    
+    <br>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+<ion-content [fullscreen]="true">
+   <ion-grid>
+       <ion-row class="ion-align-items-center" style="text-align: center ;" >        
+        <ion-col sizeMd="4" offsetMd="4" >
+          <ion-card>
+            <img src="../../assets/icon/1 (1).jpg"  alt="">           
+          </ion-card>          
+        </ion-col>               
+       </ion-row>
+
+       <ion-row class="ion-align-items-center" >
+        <ion-col size="12">
+          <ion-card>            
+            <ion-card-header class="letra" style="text-align:center ; font-size: 1rem;" >                                      
+              <ion-card-title> Es una serie de televisión estadounidense de animación                                   
+                                  para adultos creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim.                        
+              </ion-card-title>
+            </ion-card-header>          
+            <ion-card-content> 
+              <ion-accordion-group>
+                <ion-accordion value="first">
+                  <ion-item slot="header" color="light">
+                    <ion-label class="tituloLetras" style="text-align:center ;">Ver++</ion-label>
+                  </ion-item>
+                  <div class="ion-padding letra" slot="content">
+                    La serie sigue las desventuras de un científico, Rick, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos. Roiland es el encargado de darle voz a Rick y a Morty, la serie también incluye las voces de Chris Parnell, Spencer Grammer y Sarah Chalke.
+                    La serie se originó por un cortometraje rudimentario animado por Roiland para el festival de cine Channel 101 llamado Doc and Mharti, una parodia de los principales protagonistas de Back to the Future. Cuando la cadena NBC despidió a Harmon en 2013 por discusiones entre él y los ejecutivos de la serie que había creado, Community, él y Roiland desarrollaron una serie basada en los personajes ya creados por Roiland.1​
+                  </div>
+                </ion-accordion>
+              </ion-accordion-group>
+            </ion-card-content>
+           </ion-card>
+        </ion-col>         
+      </ion-row>
+   </ion-grid>
+   <br>
+   <ion-card>
+    <ion-title style="text-align:center ;" class="tituloLetra">
+      Trailer sexta Temporada
+   </ion-title>
+   </ion-card>
+   
+   <br>
+   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kkEdpbznHAM" title="YouTube video player" frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+           </iframe>
+           <br>
+           <ion-card>
+    <ion-title style="text-align:center ; font-size: 1rem;" class="tituloLetra">
+      Plataformas Donde se encuentra Disponibles
+   </ion-title>
+   </ion-card>
+   <ion-grid>
+       <ion-row class="ion-align-items-center " style="text-align: center ;"  >             
+           <ion-col size="6">
+                <ion-card>
+                   <ion-card-header>
+                       <ion-card-title>
+                         <a href="https://www.hbomax.com/hn/es" class="sombraEnlace">
+                          <img style="width: 40%;"  src="../../assets/icon/HBO.png" alt="" srcset="">
+                         </a>
+                       </ion-card-title>
+                   </ion-card-header>
+                   <ion-card-content>
+                    HBO 
+                   </ion-card-content>                 
+                </ion-card>
+           </ion-col>
+
+           <ion-col size="6">
+                   <ion-card>
+                   <ion-card-header>
+                       <ion-card-title>
+                         <a href="https://www.netflix.com/hn/" class="sombraEnlace">
+                          <img style="width: 40%;"  src="../../assets/icon/Netflix.png" alt="" srcset="">
+                         </a>
+                       </ion-card-title>
+                   </ion-card-header>
+                   <ion-card-content>
+                    Netflix
+                   </ion-card-content>                 
+                </ion-card>                       
+
+           </ion-col>
+       </ion-row>
+   </ion-grid>
+  
+
+   <ion-footer collapse="fade">
+    <ion-toolbar>
+      <ion-title style="text-align:center ; font-size: 1rem;" class="letra">
+        GrupoN2
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
+  
+  
+  
+    
+    
 </ion-content>

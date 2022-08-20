@@ -1,0 +1,23 @@
+<ion-menu side="start" menuId="menuPrincipal" contentId="main">
+  <ion-header>
+    <ion-toolbar color="success">
+      <ion-title style="text-align:center ;">UMH</ion-title>
+      <ion-item>
+        <ion-avatar slot="end">
+          <img src="../../../assets/icon/ricky1 (2).png">
+        </ion-avatar>
+        <ion-item>
+          <ion-label position="floating">nombre del usuario</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-item>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item [routerLink]="['userlist']">Lista de personajes</ion-item>
+      <ion-item [routerLink]="['integrantes']">Integrantes</ion-item>
+      <ion-item [routerLink]="['acercade']">Acerca de</ion-item>      
+    </ion-list>
+  </ion-content>
+</ion-menu>

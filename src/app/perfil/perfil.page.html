@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>perfil</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="userlist"></ion-back-button>
+    </ion-buttons> 
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-grid>
+    <ion-row>
+      <ion-col >
+        <div *ngIf="personaje">
+          <ion-card>
+              <ion-card-content   style="text-align:center ;  ">
+                   <img src="{{personaje.image}}" alt="imagen perfil" >
+                    <br>
+                    <br>
+                   <ion-card-title class="ion-text-center ion-mt-2 tituloLetra" style="font-size: 3rem ;" >
+                  {{personaje.name}}
+                </ion-card-title>
+                <br>
+              
+                
+                <ion-card-subtitle>
+                  <p>
+                    Especie: 
+                    <span>{{personaje.species}}</span>
+                  </p>            
+                </ion-card-subtitle>          
+                <ion-card-subtitle>
+                  <p>
+                    Genero: 
+                    <span>{{personaje.gender}}</span>
+                  </p>            
+                </ion-card-subtitle>
+                <ion-card-subtitle>
+                  <p>
+                    Estatus: 
+                    <span>{{personaje.status}}</span>
+                  </p>                  
+                </ion-card-subtitle>
+                <ion-card-subtitle>
+                  <p>
+                    Ubicacíon: 
+                    <span>{{ubicacion.name}}</span>
+                  </p>                  
+                </ion-card-subtitle>
+                <ion-card-subtitle>
+                  <p>                    
+                    <span>{{ubicacion.dimension}}</span>
+                  </p>                  
+                </ion-card-subtitle>
+                <ion-card-subtitle>
+                  <p>
+                    Creacion: 
+                    <span>{{ubicacion.created}}</span>
+                  </p>                  
+                </ion-card-subtitle>
+                <ion-title>
+                  <p> Nombre del episodio:
+                    <samp>{{episodio.name}}</samp>
+                  </p>
+                 </ion-title>
+                 <ion-title>
+                  <p>fecha episodio:
+                    <samp>{{episodio.air_date}}</samp>
+                  </p>
+                 </ion-title>                  
+                 
+              </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+    <!--otra tabla-->
+    
+ </ion-grid>
+  
+    
+  
+
+</ion-content>
